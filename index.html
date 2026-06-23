@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>AI Career Assistant</title>
+<title>Meet Giorgia</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
     max-width:800px;
@@ -15,6 +16,13 @@ body{
 
 h1{
     color:#222;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    font-size:20px;
+    color:#666;
+    margin-bottom:25px;
 }
 
 button{
@@ -28,6 +36,7 @@ button{
     background:white;
     font-size:16px;
     text-align:left;
+    transition:0.2s;
 }
 
 button:hover{
@@ -43,15 +52,20 @@ button:hover{
     padding:20px;
     border-radius:10px;
     margin-top:10px;
+    line-height:1.7;
+    white-space:pre-line;
 }
+
 </style>
 </head>
 
 <body>
 
-<h1>👋 👋 Meet Giorgia
+<h1>👋 Meet Giorgia</h1>
 
-Your interactive guide to my profile </h1>
+<div class="subtitle">
+Management Engineer | Problem Solver | Continuous Improver
+</div>
 
 <p>
 Welcome! Ask me anything about Giorgia's profile.
@@ -61,24 +75,28 @@ Welcome! Ask me anything about Giorgia's profile.
 Who is Giorgia?
 </button>
 
-<button onclick="answer('softskills')">
-What are her soft skills?
+<button onclick="answer('hire')">
+Why should we hire Giorgia?
+</button>
+
+<button onclick="answer('impact')">
+What impact has she created so far?
 </button>
 
 <button onclick="answer('experience')">
 What is her previous experience?
 </button>
 
-<button onclick="answer('interests')">
-What are her interests?
-</button>
-
 <button onclick="answer('hardskills')">
 What are her hard skills?
 </button>
 
-<button onclick="answer('hire')">
-Why should we hire Giorgia?
+<button onclick="answer('softskills')">
+What are her soft skills?
+</button>
+
+<button onclick="answer('interests')">
+What are her interests?
 </button>
 
 <div id="chat"></div>
@@ -94,14 +112,23 @@ who:
 
 Born in Abruzzo, educated between Rome, Portugal and Turin, I have always looked for experiences that pushed me outside my comfort zone. From developing a social-impact startup for off-grid solar energy in Uganda to leading process improvement initiatives in the automotive sector, I enjoy turning ideas into tangible results while building strong relationships with the people around me.
 
-I am naturally curious, proactive and energetic, and I am constantly looking for opportunities to learn, grow and create value`,
+I am naturally curious, proactive and energetic, and I am constantly looking for opportunities to learn, grow and create value.`,
 
-softskills:
-`The qualities that best describe me are ownership, adaptability and communication.
+hire:
+`Because I combine analytical thinking with initiative and execution.
 
-I enjoy working with people, understanding different perspectives and creating collaboration between teams with different goals and backgrounds. Whether presenting a project to hundreds of people, interviewing stakeholders, coordinating activities or supporting remediation plans, I naturally take initiative and focus on finding practical solutions.
+In every experience I have had, I quickly moved beyond simply performing assigned tasks and focused on understanding how things could be improved. I enjoy taking ownership, building relationships with stakeholders and driving tangible results.
 
-I am also highly resilient and comfortable in dynamic environments where priorities evolve quickly.`,
+I am looking for an environment that values ambition, learning and impact, and where I can continue growing as fast as the challenges around me.`,
+
+impact:
+`Throughout my experiences, I have always looked beyond simply completing assigned tasks and focused on creating tangible improvements.
+
+During my Master's thesis, I led the development of Juakit, a social-impact startup bringing solar energy to vulnerable communities in Uganda, managing activities ranging from business planning and funding applications to stakeholder engagement and public presentations.
+
+In my current role, I have contributed to process optimization and automation initiatives, helping reduce manual effort, identify inefficiencies and support cost-saving improvements.
+
+My goal is always the same: leave processes, projects and teams better than I found them.`,
 
 experience:
 `My experience combines business, technology and process improvement.
@@ -110,20 +137,28 @@ During my Master's thesis project, I developed Juakit, a startup created to brin
 
 Today, I work as a Cyber Security Process Expert in the automotive sector, supporting IT Internal Controls over Financial Reporting (ICFR). Beyond audit and compliance activities, I have contributed to process optimization initiatives, automation projects and cost-saving improvements by challenging inefficient practices and helping transform manual activities into scalable solutions.`,
 
-interests:
-`I am naturally curious and passionate about understanding how things work, how they can be improved and how technology can create value for people and organizations.
-
-This is one of the reasons why Management Engineering has always felt like the right fit for me: it combines business, technology, strategy and people, offering the versatility to approach challenges from different perspectives.
-
-I enjoy exploring new cultures, working with diverse stakeholders and continuously learning from new experiences. My Erasmus journey, international projects and multidisciplinary background all reflect this proactive mindset and my desire to keep growing both professionally and personally.`,
-
 hardskills:
-`My hard skills combine business, technology and analytical thinking. Throughout my academic and professional experiences, I have worked on process improvement, project management, IT audit, risk assessment and data-driven decision making.
+`My background combines business, technology and process optimization.
 
-I am comfortable working with enterprise systems such as SAP, advanced Microsoft Office tools (Excel, PowerPoint and Project), and technologies like Python, Power BI and process modeling platforms. What I enjoy most, however, is using these tools to simplify complexity, improve efficiency and turn ideas into practical solutions.`,
+I have developed strong analytical and organizational skills through experiences in project management, startup development, IT audit and continuous improvement initiatives.
 
-hire:
-`Because I combine analytical thinking with initiative and execution. In every experience I have had, I quickly moved beyond simply performing assigned tasks and focused on understanding how things could be improved. I enjoy taking ownership, building relationships with stakeholders and driving tangible results. I am looking for an environment that values ambition, learning and impact, and where I can continue growing as fast as the challenges around me.`
+I regularly work with SAP, the Microsoft Office Suite, Power BI and Python, but I see technology as more than a set of tools: for me, it is a way to understand systems, connect people and processes, and create measurable value.`,
+
+softskills:
+`The qualities that best describe me are ownership, adaptability and communication.
+
+I enjoy working with people, understanding different perspectives and creating collaboration between teams with different goals and backgrounds. Whether presenting a project to hundreds of people, interviewing stakeholders, coordinating activities or supporting remediation plans, I naturally take initiative and focus on finding practical solutions.
+
+I am also highly resilient and comfortable in dynamic environments where priorities evolve quickly.`,
+
+interests:
+`Curiosity has always been one of my strongest drivers.
+
+I enjoy discovering new ideas, meeting people with different backgrounds and challenging myself in unfamiliar environments.
+
+This is exactly why I chose Management Engineering: a multidisciplinary field that reflects my personality and allows me to combine technology, business, problem-solving and human interaction. I like being able to move across different topics, connect perspectives and turn complexity into practical solutions.
+
+Whether through my Erasmus experience, international projects or professional challenges, I am constantly looking for opportunities to learn, contribute and grow.`
 
 };
 
