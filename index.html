@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AI Career Assistant</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:40px;
+    background:#f7f8fa;
+}
+
+h1{
+    color:#222;
+}
+
+button{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:white;
+    font-size:16px;
+    text-align:left;
+}
+
+button:hover{
+    background:#eceff3;
+}
+
+#chat{
+    margin-top:30px;
+}
+
+.message{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>👋 AI Career Assistant</h1>
+
+<p>
+Welcome! Ask me anything about Noyz's profile.
+</p>
+
+<button onclick="answer('consulting')">
+Why consulting?
+</button>
+
+<button onclick="answer('impact')">
+What impact did he create?
+</button>
+
+<button onclick="answer('skills')">
+What are his strongest skills?
+</button>
+
+<button onclick="answer('hire')">
+Why should we hire him?
+</button>
+
+<div id="chat"></div>
+
+<script>
+
+function answer(type){
+
+let responses = {
+
+consulting:
+"INSERT YOUR ANSWER HERE",
+
+impact:
+"INSERT YOUR ANSWER HERE",
+
+skills:
+"INSERT YOUR ANSWER HERE",
+
+hire:
+"INSERT YOUR ANSWER HERE"
+
+};
+
+document.getElementById("chat").innerHTML =
+`
+<div class="message">
+⏳ Thinking...
+</div>
+`;
+
+setTimeout(() => {
+
+document.getElementById("chat").innerHTML =
+`
+<div class="message">
+${responses[type]}
+</div>
+`;
+
+},1000);
+
+}
+
+</script>
+
+</body>
+</html>
